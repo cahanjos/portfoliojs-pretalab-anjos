@@ -5,9 +5,16 @@ function clicar () {
 const horaInput = document.querySelector('#hora')
 hora = horaInput.value
 
+const separador = hora.indexOf(':')
+
+if(separador === -1){
+    verificador.innerHTML = 'HORÁRIO INVÁLIDO'
+}
 const arrayHora = hora.split(':')
 const valorHora = arrayHora [0]
-const valorMin = arrayHora [1]
+const valorMin = arrayHora [1].split('', 2). toString()
+
+console.log(valorMin)
 
 if(valorMin >= 60) {
     verificador.innerHTML = 'HORÁRIO INVÁLIDO'

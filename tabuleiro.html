@@ -4,6 +4,7 @@ cada célula será independente
 2º clicar em cada célula para dar X e O sequencialmente--> 
 
 <!DOCTYPE html>
+<link rel="stylesheet" href="#">
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -11,38 +12,27 @@ cada célula será independente
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Jogo da Velha</title>
-</head>
-<body>
-    <main>
-        <section class "título">
-            <h1> Jogo da Velha</h1>
-                </section>
-                <div>
-                    <h3 class="jogador X"> Jogador X: </h3>
-                    <h3 class="jogador O"> Jogador O: </h3>
-                </div>
+<div>
+    <table id="tabuleiro" width="200px" border="1px">
+<tr>
+    <td id="1" onclick="jogar(1)" style="width: 25px; height: 25px;"></td>
+    <td id="2" onclick="jogar(2)" style="width: 25px; height: 25px;"></td>
+    <td id="3" onclick="jogar(3)" style="width: 25px; height: 25px;"></td>
+</tr>
+<tr>
+    <td id="4" onclick="jogar(4)" style="width: 25px; height: 25px;"></td>
+    <td id="5" onclick="jogar(5)" style="width: 25px; height: 25px;"></td>
+    <td id="6" onclick="jogar(6)" style="width: 25px; height: 25px;"></td>
+</tr>
+<tr>
+    <td id="7" onclick="jogar(7)" style="width: 25px; height: 25px;"></td>
+    <td id="8" onclick="jogar(8)" style="width: 25px; height: 25px;"></td>
+    <td id="9" onclick="jogar(9)" style="width: 25px; height: 25px;"></td>
+</tr>
+    </table>
+    <div id="resultado"></div>
+</div>
 
-    
-
-    <section class="container" id="tabuleiro">
-        <div class="cell" id="1" onclick="jogar(1)"></div>
-        <div class="cell" id="2" onclick="jogar(2)"></div>
-        <div class="cell" id="3" onclick="jogar(3)"></div>
-        <div class="cell" id="4" onclick="jogar(4)"></div>
-        <div class="cell" id="5" onclick="jogar(5)"></div>
-        <div class="cell" id="6" onclick="jogar(6)"></div>
-        <div class="cell" id="7" onclick="jogar(7)"></div>
-        <div class="cell" id="8" onclick="jogar(8)"></div>
-        <div class="cell" id="9" onclick="jogar(9)"></div>
-    </section>
-
-    <div class="winning-message" id="winning-message">
-        <p>X VENCEU!</p>
-        <button>Reiniciar</button>
-
-    </div>
-</main>
     <script src="./tabuleiro.js"></script>
-</body>
-</html>
+
 

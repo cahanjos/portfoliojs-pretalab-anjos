@@ -1,8 +1,16 @@
+const div = document.querySelector('#element')
+
 function mouseOver () {
-    const div = document.querySelector('#element')
-div.style.background = 'blue'
+    div.style.background = 'blue'
 }
 
 function mouseOut () {
-    alert('Movi o mouse')
+    div.style.background = 'black'
+    div.style.color = 'white'
+    div.innerHTML += "<p id='saida' > Saída do mouse </p"    
+    const p = document.querySelector('#saida')
+    
+    if(!p){
+        
+    }
 }

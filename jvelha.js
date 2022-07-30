@@ -44,4 +44,17 @@ resultado.forEach(item => {
 }
 }
 
-    
+const tabuleiro = document.querySelector('#tabuleiro')
+
+for(let i = 1; i < 9; i += 3){
+tabuleiro.innerHTML += `
+<tr>
+<td id=${i} onclick="jogar(${i})" style="width: 25px; height: 25px;"></td>
+<td id=${i + 1} onclick="jogar(${i + 1})" style="width: 25px; height: 25px;"></td>
+<td id=${i + 2} onclick="jogar(${i + 2})" style="width: 25px; height: 25px;"></td>
+</tr>
+`
+
+}
+
+
